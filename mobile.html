@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="slider.js"></script>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="editar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>   <!-- link do Jquery para roda o JavaScript-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700'>  <!-- APIs do Google são interfaces de programação de aplicativos desenvolvidas pelo Google-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">  <!-- esssas 3 fontes sao importante para rodar JS  -->
+</head>
+<body>
+    <div class="mobile">
+      <div class="top"> </div>
+        <div class="bottom" ></div>
+        <div class="screen"> 
+
+            <img src="back8.jpg" >
+            
+            <ul>
+                <i class="fa fa-align-justify" aria-hidden="true"></i>
+                <i href="#home" class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                <i class="fa fa-angle-double-left" aria-hidden="true"></i> 
+             </ul>
+            
+       
+
+           <div class="mobile-wrap">
+            <div class="mobile clearfix">
+                <div class="header">
+                    
+                    <span class="ion-ios-navicon pull-left"><i></i></span>
+                    <span class="title">Home</span>
+                    <span class="ion-ios-search pull-right"></span>
+            
+                    <div class="search"> 
+
+                        <div class="subir-ul">
+                        <ul>
+                        <i class="fa fa-wifi" aria-hidden="true"></i>
+                            <i class="fa fa-battery-full" aria-hidden="true"></i> 
+                         </ul>
+                        </div>
+                    
+                    <form method="post">
+                    
+                        <input type="search" placeholder="Search Here">
+                    </form>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="sidebar-overlay"></div>
+                    <div class="sidebar-content">
+                        <div class="top-head">
+                            <div class="name"> Cicero Monteiro </div>
+                            <div class="email">ciceroduvall@gmail.com</div>
+                        </div>
+                        <div class="nav-left">
+                            <a href="#profile"><span class="ion-ios-person-outline"></span> Profile</a>
+                            <a href="#mobile"><span class="ion-ios-information-outline"></span> Galeria</a>
+                            <a href="#credits"><span class="ion-ios-information-outline"></span> Músic</a>
+                            <a href="#video"><span class="ion-ios-information-outline"></span> Video</a>
+                           <!-- <a href="#home"><span class="ion-ios-home-outline"></span> Home</a>-->
+                            <a href="#alarm"><span class="ion-ios-list-outline"></span> Alarm</a>
+                            <a href="#compose"><span class="ion-ios-compose-outline"></span> Compose</a>
+                            <a href="#chats"><span class="ion-ios-chatboxes-outline"></span> Chats</a>
+                            <a href="#settings"><span class="ion-ios-gear-outline"></span> Settings</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="html search">
+                        <div class="title bounceInDown animated">Search Result</div>
+                        <p class="flipInX animated">Sorry,<br>no matches found for <b class="key"></b></p>
+                    </div>
+                    <div class="html welcome visible">
+                        <div class="datetime">
+                            <div class="day lightSpeedIn animated">Thursday</div>
+                            <div class="date lightSpeedIn animated">June 18, 2015</div>
+                            <div class="time lightSpeedIn animated">08:00 AM</div>
+                        </div>
+                    </div>
+                    <div class="html alarm">
+                        <div class="forecast clearfix">
+                            <div class="datetime pull-left bounceInLeft animated">
+                                <div class="day">Thursday</div>
+                                <div class="date">June 18, 2015</div>
+                            </div>
+                            <div class="temperature pull-right bounceInRight animated">
+                                <div class="unit"><span class="ion-ios-sunny-outline"></span> 34<i>&deg;</i></div>
+                                <div class="location">Kathmandu, Nepal</div>
+                            </div>
+                        </div>
+                        <div class="alarm-list">
+                            <div class="note clearfix slideInRight animated">
+                                <div class="time pull-left">
+                                    <div class="hour">9</div>
+                                    <div class="shift">AM</div>
+                                </div>
+                                <div class="to-do pull-left">
+                                    <div class="title">Finish HTML Coding</div>
+                                    <div class="subject">Web UI</div>
+                                </div>
+                            </div>
+                            <div class="note clearfix slideInRight animated">
+                                <div class="time pull-left">
+                                    <div class="hour">1</div>
+                                    <div class="shift">PM</div>
+                                </div>
+                                <div class="to-do pull-left">
+                                    <div class="title">Lunch Break</div>
+                                    <div class="subject"></div>
+                                </div>
+                            </div>
+                            <div class="note clearfix slideInRight animated" data-revert="slideOutRight">
+                                <div class="time pull-left">
+                                    <div class="hour">3</div>
+                                    <div class="shift">PM</div>
+                                </div>
+                                <div class="to-do pull-left">
+                                    <div class="title">Design Stand Up</div>
+                                    <div class="subject">Hangouts</div>
+                                    <div class="user-list clearfix">
+                                        <div class="user pull-left"></div>
+                                        <div class="user pull-left"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="html compose">
+                        <div class="forms">
+                            <div class="group clearfix slideInRight animated">
+                                <label class="pull-left" for="compose-time"><span class="ion-ios-time-outline"></span> Time</label>
+                                <input class="pull-right" id="compose-time" type="time">
+                            </div>
+                            <div class="group clearfix slideInLeft animated">
+                                <label class="pull-left" for="compose-date"><span class="ion-ios-calendar-outline"></span> Date</label>
+                                <input class="pull-right" id="compose-date" type="date">
+                            </div>
+                            <div class="group clearfix slideInRight animated">
+                                <label class="pull-left" for="compose-title"><span class="ion-ios-paper-outline"></span> Title</label>
+                                <input class="pull-right" id="compose-title" type="text">
+                            </div>
+                            <div class="group clearfix slideInLeft animated">
+                                <label class="visible" for="compose-detail"><span class="ion-ios-list-outline"></span> Task</label>
+                                <textarea class="visible" id="compose-detail" rows="3"></textarea>
+                            </div>
+                            <div class="action flipInY animated">
+                                <button class="btn">Compose</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="html chats">
+                        <div class="tabs-list clearfix">
+                            <a href="#" class="tab active">Users</a>
+                            <a href="#" class="tab">Messages</a>
+                            <a href="#" class="tab">Groups</a>
+                        </div>
+                        <div class="active-users">
+                            <div class="user clearfix rotateInDownLeft animated">
+                                <div class="photo pull-left">
+                                    
+                                </div>
+                                <div class="desc pull-left">
+                                    <p class="name">Leonardo Silva</p>
+                                    <p class="position">Web &amp; UI Designer</p>
+                                </div>
+                                <div class="idle pull-right"><span class="away"></span></div>
+                            </div>
+                            <div class="user clearfix rotateInDownRight animated">
+                                <div class="photo pull-left">
+                                  
+                                </div>
+                                <div class="desc pull-left">
+                                    <p class="name">Mariana Carvalho</p>
+                                    <p class="position">Front-End Developer</p>
+                                </div>
+                                <div class="idle pull-right"><span class="offline"></span></div>
+                            </div>
+                            <div class="user clearfix rotateInDownLeft animated">
+                                <div class="photo pull-left">
+                                   
+                                </div>
+                                <div class="desc pull-left">
+                                    <p class="name">Diego Tenório</p>
+                                    <p class="position">Co-Founder</p>
+                                </div>
+                                <div class="idle pull-right"><span class="away"></span></div>
+                            </div>
+                            <div class="user clearfix rotateInDownRight animated">
+                                <div class="photo pull-left">
+                                    
+                                </div>
+                                <div class="desc pull-left">
+                                    <p class="name">Miguel Santanna</p>
+                                    <p class="position">Sales Manager</p>
+                                </div>
+                                <div class="idle pull-right"><span class="online"></span></div>
+                            </div>
+                            <div class="user clearfix rotateInDownLeft animated">
+                                <div class="photo pull-left">
+                                   
+                                </div>
+                                <div class="desc pull-left">
+                                    <p class="name">Rafaela Damares</p>
+                                    <p class="position">App Developer</p>
+                                </div>
+                                <div class="idle pull-right"><span class="online"></span></div>
+                            </div>
+                            <div class="user clearfix rotateInDownRight animated">
+                                <div class="photo pull-left">
+                                    
+                                </div>
+                                <div class="desc pull-left">
+                                    <p class="name">Thiago Gomes</p>
+                                    <p class="position">Project Manager</p>
+                                </div>
+                                <div class="idle pull-right"><span class="online"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="html settings">
+                        <div class="setting-list">
+                            <div class="gear clearfix slideInRight animated">
+                                <div class="title pull-left">General</div>
+                                <div class="action pull-right"><span class="ion-ios-arrow-right"></span></div>
+                            </div>
+                            <div class="gear clearfix slideInLeft animated">
+                                <div class="title pull-left"><label for="gear-notice">Notification</label></div>
+                                <div class="action pull-right"><input id="gear-notice" class="on-off" type="checkbox"><label for="gear-notice"></label></div>
+                            </div>
+                            <div class="gear clearfix slideInRight animated">
+                                <div class="title pull-left"><label for="gear-sound">Sound</label></div>
+                                <div class="action pull-right"><input id="gear-sound" class="on-off" type="checkbox" checked><label for="gear-sound"></label></div>
+                            </div>
+                            <div class="gear clearfix slideInLeft animated">
+                                <div class="title pull-left">Theme</div>
+                                <div class="action pull-right">Standard <span class="ion-ios-arrow-right"></span></div>
+                            </div>
+                            <div class="gear clearfix slideInRight animated">
+                                <div class="title pull-left">Support</div>
+                                <div class="action pull-right"><span class="ion-ios-arrow-right"></span></div>
+                            </div>
+                            <div class="gear clearfix slideInLeft animated">
+                                <div class="title pull-left">Privacy</div>
+                                <div class="action pull-right"><span class="ion-ios-arrow-right"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="html profile">
+                        <div class="photo flipInX animated">
+                            <img src="fotociciro.jpg">
+                            <div class="social">
+                                <a href="https://facebook.com/khadkamhn" class="soc-item soc-count-1"><span class="ion-social-facebook"></span></a>
+                                <a href="https://twitter.com/khadkamhn" class="soc-item soc-count-2"><span class="ion-social-twitter"></span></a>
+                                <a href="https://github.com/khadkamhn" class="soc-item soc-count-3"><span class="ion-social-github"></span></a>
+                                <a href="https://pinterest.com/khadkamhn" class="soc-item soc-count-4"><span class="ion-social-pinterest"></span></a>
+                                <a href="https://np.linkedin.com/in/khadkamhn" class="soc-item soc-count-5"><span class="ion-social-linkedin"></span></a>
+                                <a href="https://codepen.io/khadkamhn" class="soc-item soc-count-6"><span class="ion-social-codepen"></span></a>
+                                <a href="skype:khadkamhn?userinfo" class="soc-item soc-count-7"><span class="ion-social-skype"></span></a>
+                                <a href="http://dribbble.com/khadkamhn" class="soc-item soc-count-8"><span class="ion-social-dribbble"></span></a>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <p class="heading flipInY animated">
+                                <span class="name">Cicero Monteiro</span><span class="position">Web/Desenvolvedor Front-End</span>
+                            </p>
+                            <p class="text fadeInUp animated">Olá chamo Cícero,sou Desenvolvedor Front-End,sempre buscando conhecimento procurando crescer.Nas minhas horas vagas gosto de tocar Guitarra,assistir filmes e jogar.</p>
+                        </div>
+                    </div>
+                    <div class="html credits" style="background: rgb(17, 26, 36);
+                    margin: 0 0;
+                    padding-top: 37px;">
+
+                           <img src="thicke2.png"  style="margin: 79px 0;
+                           width: 17em;
+                           height: 61%;" alt=""> 
+                       
+                        
+                        <audio controls width="30" heigth="40">
+                            <source src="song.mp3"type="audio/mpeg">
+                            </audio>
+                    
+                    </div>
+                </div>
+               
+                <div class="html video" style="    background-color: #191a1c;; padding-top: 59px;">
+                  
+                    <div class="video-mp4">
+                    <video controls width="230" heigth="400"  >
+                      <source src="forza.mp4"type="video/mp4">
+                     </video>
+                 </div><br>
+
+                 <div class="video-mp4">
+                    <video controls width="230" heigth="400"  >
+                      <source src="injustice.mp4"type="video/mp4">
+                     </video>
+                 </div><br>
+            </div>
+                    <div class="html mobile" style=" background-color: #1d1e1e;
+                    padding: 43px 0;">
+
+                        <div class="slider" >
+                            <div class="slider-items">
+                                <div  class="item active">
+                                   <img src="slide1.jpg" />
+                                   <div class="caption">
+                                      
+                                   </div>
+                                </div>
+                                <div  class="item">
+                                   <img src="slide2.jpg" />
+                                   <div class="caption">
+                                      
+                                   </div>
+                                </div>
+                                <div  class="item">
+                                   <img src="slide3.jpg" />
+                                   <div class="caption">
+                                      
+                                   </div>
+                                </div>
+                      
+                            </div>
+                              
+                                <div class="left-slide"></div>
+                                <div class="right-slide"></div>
+                              
+                         </div>
+                      
+                     
+                  </div>
+                </div>
+             </div>
+          </div>
+        </div>
+         
+       
+
+
+       
+    <script  type="text/javascript">
+      $(function() {
+            App.init();
+      });
+      var App = {
+            init: function() {
+                  this.datetime(), this.side.nav(), this.search.bar(), this.navigation(), this.hyperlinks(), setInterval("App.datetime();", 1e3)
+            },
+            datetime: function() {
+                  var e = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"),
+                        t = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"),
+                        a = new Date,
+                        i = a.getYear();
+                  1e3 > i && (i += 1900);
+                  var s = a.getDay(),
+                        n = a.getMonth(),
+                        r = a.getDate();
+                  10 > r && (r = "0" + r);
+                  var l = a.getHours(),
+                        c = a.getMinutes(),
+                        h = a.getSeconds(),
+                        o = "AM";
+                  l >= 12 && (o = "PM"), l > 12 && (l -= 12), 0 == l && (l = 12), 9 >= c && (c = "0" + c), 9 >= h && (h = "0" + h), $(".welcome .datetime .day").text(e[s]), $(".welcome .datetime .date").text(t[n] + " " + r + ", " + i), $(".welcome .datetime .time").text(l + ":" + c + ":" + h + " " + o)
+            },
+            title: function(e) {
+                  return $(".header>.title").text(e)
+            },
+            side: {
+                  nav: function() {
+                        this.toggle(), this.navigation()
+                  },
+                  toggle: function() {
+                        $(".ion-ios-navicon").on("touchstart click", function(e) {
+                              e.preventDefault(), $(".sidebar").toggleClass("active"), $(".nav").removeClass("active"), $(".sidebar .sidebar-overlay").removeClass("fadeOut animated").addClass("fadeIn animated")
+                        }), $(".sidebar .sidebar-overlay").on("touchstart click", function(e) {
+                              e.preventDefault(), $(".ion-ios-navicon").click(), $(this).removeClass("fadeIn").addClass("fadeOut")
+                        })
+                  },
+                  navigation: function() {
+                        $(".nav-left a").on("touchstart click", function(e) {
+                              e.preventDefault();
+                              var t = $(this).attr("href").replace("#", "");
+                              $(".sidebar").toggleClass("active"), $(".html").removeClass("visible"), "home" == t || "" == t || null == t ? $(".html.welcome").addClass("visible") : $(".html." + t).addClass("visible"), App.title($(this).text())
+                        })
+                  }
+            },
+            search: {
+                  bar: function() {
+                        $(".header .ion-ios-search").on("touchstart click", function() {
+                              var e = ($(".header .search input").hasClass("search-visible"), $(".header .search input").val());
+                              return "" != e && null != e ? (App.search.html($(".header .search input").val()), !1) : ($(".nav").removeClass("active"), $(".header .search input").focus(), void $(".header .search input").toggleClass("search-visible"))
+                        }), $(".search form").on("submit", function(e) {
+                              e.preventDefault(), App.search.html($(".header .search input").val())
+                        })
+                  },
+                  html: function(e) {
+                        $(".search input").removeClass("search-visible"), $(".html").removeClass("visible"), $(".html.search").addClass("visible"), App.title("Result"), $(".html.search").html($(".html.search").html()), $(".html.search .key").html(e), $(".header .search input").val("")
+                  }
+            },
+            navigation: function() {
+                  $(".nav .mask").on("touchstart click", function(e) {
+                        e.preventDefault(), $(this).parent().toggleClass("active")
+                  })
+            },
+            hyperlinks: function() {
+                  $(".nav .nav-item").on("click", function(e) {
+                        e.preventDefault();
+                        var t = $(this).attr("href").replace("#", "");
+                        $(".html").removeClass("visible"), $(".html." + t).addClass("visible"), $(".nav").toggleClass("active"), App.title($(this).text())
+                  })
+            }
+      };
+      </script>
+
+<script  type="text/javascript">
+    var slides=document.querySelector('.slider-items').children;
+ var nextSlide=document.querySelector(".right-slide");
+var prevSlide=document.querySelector(".left-slide");
+var totalSlides=slides.length;
+var index=0;
+
+nextSlide.onclick=function () {
+     next("next");
+}
+prevSlide.onclick=function () {
+     next("prev");
+}
+
+function next(direction){
+
+   if(direction=="next"){
+      index++;
+       if(index==totalSlides){
+        index=0;
+       }
+   } 
+   else{
+           if(index==0){
+            index=totalSlides-1;
+           }
+           else{
+            index--;
+           }
+    }
+
+  for(i=0;i<slides.length;i++){
+          slides[i].classList.remove("active");
+  }
+  slides[index].classList.add("active");     
+
+}
+
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('a[href="#home"]').fadeIn();
+        } else {
+            $('a[href="#home"]').fadeOut();
+        }
+    });
+
+    $('a[href="#home"]').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+});
+
+</script>
+</body>
+</html> 
+
+<!--https://www.bootstrapcdn.com/fontawesome/
+
+https://fontawesome.com/v4.7.0/icons/
+-->
